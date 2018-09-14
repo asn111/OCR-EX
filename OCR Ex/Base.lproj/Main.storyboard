@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="OCR_Ex" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8g3-7c-0EP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aLa-Tx-3O6">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Snap/upload a clear picture of your poem then edit below. Tap outside of the text box once your sweet nothings are complete." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="xoS-Fa-AV2">
+                                        <rect key="frame" x="26" y="30" width="323" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="XmY-tm-6KK"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="16"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QKC-vI-kE2">
+                                        <rect key="frame" x="307" y="607" width="60" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="hDK-wP-stW"/>
+                                            <constraint firstAttribute="height" constant="60" id="sGI-Hn-wRL"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="22"/>
+                                        <state key="normal" image="Envelope">
+                                            <color key="titleColor" red="0.58064489149999998" green="0.74652297540000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="shareTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="plo-qV-iLl"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dgh-lC-gaz">
+                                        <rect key="frame" x="288" y="444.5" width="35" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="35" id="5Cj-iW-62P"/>
+                                            <constraint firstAttribute="width" secondItem="dgh-lC-gaz" secondAttribute="height" multiplier="1:1" id="NQv-yR-lvf"/>
+                                        </constraints>
+                                        <state key="normal" image="Swap">
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="swapTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AFh-gD-May"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GR6-R4-GCk">
+                                        <rect key="frame" x="51" y="386.5" width="272" height="40"/>
+                                        <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="22"/>
+                                        <size key="titleShadowOffset" width="1" height="1"/>
+                                        <state key="normal" title="Snap/Upload Image">
+                                            <color key="titleColor" red="0.58064489149999998" green="0.74652297540000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="0.50486483900000001" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="disabled">
+                                            <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="selected">
+                                            <color key="titleColor" red="0.67689845469999999" green="0.85872765969999998" blue="0.99221161270000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" red="0.67689845469999999" green="0.85872765969999998" blue="0.99221161270000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="snapUploadPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dhY-oO-Gcd"/>
+                                        </connections>
+                                    </button>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Find this..." adjustsFontSizeToFit="NO" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="86c-uI-WBW" userLabel="Find This">
+                                        <rect key="frame" x="51" y="446.5" width="111" height="30"/>
+                                        <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="textFeildEndEditing:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="Vdl-FC-7iV"/>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="oGQ-bH-P16"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Replace with..." adjustsFontSizeToFit="NO" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="h4U-Ct-YAd">
+                                        <rect key="frame" x="170" y="446.5" width="110.5" height="30"/>
+                                        <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="textFeildEndEditing:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="dWd-rs-1oO"/>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="5rt-zG-NsJ"/>
+                                        </connections>
+                                    </textField>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cCr-Nq-k7k">
+                                        <rect key="frame" x="51" y="110" width="272" height="257"/>
+                                        <color key="backgroundColor" red="0.2274509804" green="0.36078431370000003" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="lhM-Ax-0O2">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.50007189419999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </activityIndicatorView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="lhM-Ax-0O2" firstAttribute="leading" secondItem="aLa-Tx-3O6" secondAttribute="leading" id="1fW-fh-3Vj"/>
+                                    <constraint firstItem="cCr-Nq-k7k" firstAttribute="width" secondItem="GR6-R4-GCk" secondAttribute="width" id="2oY-B8-Hnw"/>
+                                    <constraint firstItem="GR6-R4-GCk" firstAttribute="trailing" secondItem="dgh-lC-gaz" secondAttribute="trailing" id="67O-hs-ETX"/>
+                                    <constraint firstAttribute="trailing" secondItem="lhM-Ax-0O2" secondAttribute="trailing" id="6uJ-Tf-Lv6"/>
+                                    <constraint firstItem="dgh-lC-gaz" firstAttribute="leading" secondItem="h4U-Ct-YAd" secondAttribute="trailing" constant="8" id="74J-IF-nSo"/>
+                                    <constraint firstItem="h4U-Ct-YAd" firstAttribute="leading" secondItem="86c-uI-WBW" secondAttribute="trailing" constant="8" id="7Sb-d8-XZ6"/>
+                                    <constraint firstAttribute="bottom" secondItem="QKC-vI-kE2" secondAttribute="bottom" id="7UR-Uc-Rzl"/>
+                                    <constraint firstItem="GR6-R4-GCk" firstAttribute="top" secondItem="cCr-Nq-k7k" secondAttribute="bottom" constant="20" id="8uj-kL-KXO"/>
+                                    <constraint firstItem="cCr-Nq-k7k" firstAttribute="leading" secondItem="xoS-Fa-AV2" secondAttribute="leading" constant="25" id="AmC-1Z-60d"/>
+                                    <constraint firstItem="xoS-Fa-AV2" firstAttribute="leading" secondItem="aLa-Tx-3O6" secondAttribute="leadingMargin" constant="18" id="EDb-mA-kPE"/>
+                                    <constraint firstItem="86c-uI-WBW" firstAttribute="leading" secondItem="cCr-Nq-k7k" secondAttribute="leading" id="FhJ-Os-YNJ"/>
+                                    <constraint firstItem="GR6-R4-GCk" firstAttribute="centerX" secondItem="aLa-Tx-3O6" secondAttribute="centerX" id="a5N-e7-Waf"/>
+                                    <constraint firstItem="xoS-Fa-AV2" firstAttribute="centerX" secondItem="aLa-Tx-3O6" secondAttribute="centerX" id="aXd-LU-7Tw"/>
+                                    <constraint firstItem="lhM-Ax-0O2" firstAttribute="top" secondItem="aLa-Tx-3O6" secondAttribute="top" id="aou-zv-xHS"/>
+                                    <constraint firstItem="xoS-Fa-AV2" firstAttribute="top" secondItem="aLa-Tx-3O6" secondAttribute="top" constant="30" id="b2F-oJ-ah4"/>
+                                    <constraint firstItem="cCr-Nq-k7k" firstAttribute="centerX" secondItem="aLa-Tx-3O6" secondAttribute="centerX" id="csH-lo-0C9"/>
+                                    <constraint firstItem="dgh-lC-gaz" firstAttribute="centerY" secondItem="h4U-Ct-YAd" secondAttribute="centerY" id="elb-7c-ofh"/>
+                                    <constraint firstItem="86c-uI-WBW" firstAttribute="top" secondItem="GR6-R4-GCk" secondAttribute="bottom" constant="20" id="leZ-Yy-ALX"/>
+                                    <constraint firstAttribute="bottom" secondItem="lhM-Ax-0O2" secondAttribute="bottom" id="ogB-9S-Fhi"/>
+                                    <constraint firstItem="cCr-Nq-k7k" firstAttribute="top" secondItem="xoS-Fa-AV2" secondAttribute="bottom" constant="20" id="tv7-H7-5re"/>
+                                    <constraint firstItem="86c-uI-WBW" firstAttribute="centerY" secondItem="h4U-Ct-YAd" secondAttribute="centerY" id="uXS-MP-Lb0"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="QKC-vI-kE2" secondAttribute="trailing" id="w5m-W3-2Oi"/>
+                                    <constraint firstAttribute="bottom" secondItem="cCr-Nq-k7k" secondAttribute="bottom" constant="300" id="wdO-TY-MUH"/>
+                                    <constraint firstItem="86c-uI-WBW" firstAttribute="width" secondItem="h4U-Ct-YAd" secondAttribute="width" id="yeB-cr-DJa"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.61736478400000006" green="0.5063002607" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="aLa-Tx-3O6" firstAttribute="leading" secondItem="8g3-7c-0EP" secondAttribute="leading" id="OBx-iM-fCz"/>
+                            <constraint firstAttribute="trailing" secondItem="aLa-Tx-3O6" secondAttribute="trailing" id="gcw-44-GPL"/>
+                            <constraint firstItem="aLa-Tx-3O6" firstAttribute="top" secondItem="8g3-7c-0EP" secondAttribute="top" id="i6P-vQ-xRs"/>
+                            <constraint firstItem="aLa-Tx-3O6" firstAttribute="height" secondItem="8g3-7c-0EP" secondAttribute="height" id="mYv-QS-Jr8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Qsx-vp-uHj"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="rMz-Sd-ClN" appends="YES" id="YjF-pj-b9f"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndecator" destination="lhM-Ax-0O2" id="8j0-jk-Pxh"/>
+                        <outlet property="replaceThis" destination="h4U-Ct-YAd" id="626-IY-zhy"/>
+                        <outlet property="textViewBox" destination="cCr-Nq-k7k" id="beo-uS-Ht2"/>
+                        <outlet property="topMarginConstraint" destination="i6P-vQ-xRs" id="SRr-g0-kvo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="rMz-Sd-ClN">
+                    <connections>
+                        <action selector="backgroundTapped:" destination="BYZ-38-t0r" id="DAb-5c-yh1"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="310" y="37"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Envelope" width="432" height="373"/>
+        <image name="Swap" width="800" height="800"/>
+    </resources>
+</document>
