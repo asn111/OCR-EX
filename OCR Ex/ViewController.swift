@@ -38,6 +38,11 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
        
     }
+    
+    func doTheDetection(_ image: UIImage){
+        
+    }
+    
     func moveToTop(){
         if(topMarginConstraint.constant != 0){
             return
