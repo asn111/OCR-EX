@@ -19,6 +19,7 @@
 		CDFBF97C2159FD8B007013AB /* textBoxExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFBF97B2159FD8B007013AB /* textBoxExtention.swift */; };
 		CDFBF97E215A48F4007013AB /* ImagePickerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFBF97D215A48F4007013AB /* ImagePickerExt.swift */; };
 		CDFBF980215A4923007013AB /* ImageExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFBF97F215A4923007013AB /* ImageExt.swift */; };
+		CDFBF984215BAC3B007013AB /* TesseractOCR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDFBF983215BAC3B007013AB /* TesseractOCR.framework */; };
 		E32AEF646080A74E4C6B751C /* Pods_OCR_Ex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 011753359DE93219765D35EC /* Pods_OCR_Ex.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +42,7 @@
 		CDFBF97B2159FD8B007013AB /* textBoxExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = textBoxExtention.swift; sourceTree = "<group>"; };
 		CDFBF97D215A48F4007013AB /* ImagePickerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerExt.swift; sourceTree = "<group>"; };
 		CDFBF97F215A4923007013AB /* ImageExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageExt.swift; sourceTree = "<group>"; };
+		CDFBF983215BAC3B007013AB /* TesseractOCR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TesseractOCR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDFBF984215BAC3B007013AB /* TesseractOCR.framework in Frameworks */,
 				CD3D93D72150D4B400842E15 /* libstdc++.tbd in Frameworks */,
 				CD75AF41214F8E0700182720 /* CoreImage.framework in Frameworks */,
 				E32AEF646080A74E4C6B751C /* Pods_OCR_Ex.framework in Frameworks */,
@@ -105,6 +108,7 @@
 		E464CD34A58C123B8DF770FB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CDFBF983215BAC3B007013AB /* TesseractOCR.framework */,
 				CD75AF42214F8E1100182720 /* TesseractOCR.framework */,
 				CD75AF40214F8E0700182720 /* CoreImage.framework */,
 				CD75AF3E214F8DF300182720 /* libstdc++.tbd */,
@@ -190,13 +194,11 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-OCR Ex/Pods-OCR Ex-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/GPUImage/GPUImage.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftOCR/SwiftOCR.framework",
+				"${BUILT_PRODUCTS_DIR}/TesseractOCRiOS/TesseractOCR.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GPUImage.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftOCR.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TesseractOCR.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -266,7 +268,7 @@
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_CXX_LIBRARY = "compiler-default";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -294,6 +296,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -310,7 +313,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -326,7 +329,7 @@
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_CXX_LIBRARY = "compiler-default";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -354,6 +357,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -364,7 +368,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -381,7 +385,7 @@
 				CLANG_CXX_LIBRARY = "compiler-default";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9TSYUBBW4K;
-				ENABLE_BITCODE = YES;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "OCR Ex/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -402,7 +406,7 @@
 				CLANG_CXX_LIBRARY = "compiler-default";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9TSYUBBW4K;
-				ENABLE_BITCODE = YES;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "OCR Ex/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

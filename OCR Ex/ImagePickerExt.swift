@@ -8,7 +8,7 @@
 
 import Foundation
 import UIKit
-import SwiftOCR
+//import SwiftOCR
 
 extension ViewController: UIImagePickerControllerDelegate {
     func presentImagePicker() {
@@ -48,13 +48,13 @@ extension ViewController: UIImagePickerControllerDelegate {
             activityIndecator.startAnimating()
             // 4
             dismiss(animated: true, completion: {
-                // self.doTheDetection(scaledImage)
-                let swiftOCRInstance = SwiftOCR()
-                
-                swiftOCRInstance.recognize(scaledImage) { recognizedString in
-                    print(recognizedString)
-                    self.printString(recognizedString)
-                }
+                 self.doTheDetection(scaledImage)
+//                let swiftOCRInstance = SwiftOCR()
+//
+//                swiftOCRInstance.recognize(scaledImage) { recognizedString in
+//                    print(recognizedString)
+//                    self.printString(recognizedString)
+//                }
                 // self.activityIndecator.stopAnimating()
             })
         }

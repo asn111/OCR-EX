@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import SwiftOCR
+import TesseractOCR  
 
 class ViewController: UIViewController {
 
@@ -55,23 +55,23 @@ class ViewController: UIViewController {
     
     func doTheDetection(_ image: UIImage){
         // 1
-//        if let tesseract = G8Tesseract(language: "eng+fra") {
-//            // 2
-//            tesseract.engineMode = .tesseractCubeCombined
-//            // 3
-//            tesseract.pageSegmentationMode = .auto
-//            // 4
-//            tesseract.image = image.g8_blackAndWhite()
-//            // 5
-//            tesseract.recognize()
-//            // 6
-//            textViewBox.text = tesseract.recognizedText
-//        }
-//        // 7
+        if let tesseract = G8Tesseract(language: "eng") {
+            // 2
+            tesseract.engineMode = .tesseractCubeCombined
+            // 3
+            tesseract.pageSegmentationMode = .auto
+            // 4
+            tesseract.image = image.g8_blackAndWhite()
+            // 5
+            tesseract.recognize()
+            // 6
+            textViewBox.text = tesseract.recognizedText
+        }
+        // 7
        
 
         
-       // activityIndecator.stopAnimating()
+        activityIndecator.stopAnimating()
 
     }
     
