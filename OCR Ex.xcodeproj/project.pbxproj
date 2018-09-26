@@ -7,15 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD3D93D72150D4B400842E15 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CD75AF3E214F8DF300182720 /* libstdc++.tbd */; };
+		CD75AF3D214F8D6C00182720 /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = CD75AF3C214F8D6C00182720 /* tessdata */; };
+		CD75AF41214F8E0700182720 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD75AF40214F8E0700182720 /* CoreImage.framework */; };
 		CD7EDFF3214A3B5700543148 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7EDFF2214A3B5700543148 /* AppDelegate.swift */; };
 		CD7EDFF5214A3B5700543148 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7EDFF4214A3B5700543148 /* ViewController.swift */; };
 		CD7EDFF8214A3B5700543148 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD7EDFF6214A3B5700543148 /* Main.storyboard */; };
 		CD7EDFFB214A3B5700543148 /* OCR_Ex.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CD7EDFF9214A3B5700543148 /* OCR_Ex.xcdatamodeld */; };
 		CD7EDFFD214A3B5800543148 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD7EDFFC214A3B5800543148 /* Assets.xcassets */; };
 		CD7EE000214A3B5800543148 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD7EDFFE214A3B5800543148 /* LaunchScreen.storyboard */; };
+		CDFBF97C2159FD8B007013AB /* textBoxExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFBF97B2159FD8B007013AB /* textBoxExtention.swift */; };
+		CDFBF97E215A48F4007013AB /* ImagePickerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFBF97D215A48F4007013AB /* ImagePickerExt.swift */; };
+		CDFBF980215A4923007013AB /* ImageExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFBF97F215A4923007013AB /* ImageExt.swift */; };
+		CDFBF984215BAC3B007013AB /* TesseractOCR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDFBF983215BAC3B007013AB /* TesseractOCR.framework */; };
+		E32AEF646080A74E4C6B751C /* Pods_OCR_Ex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 011753359DE93219765D35EC /* Pods_OCR_Ex.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		011753359DE93219765D35EC /* Pods_OCR_Ex.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OCR_Ex.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		463CE97C698566955E2110C4 /* Pods-OCR Ex.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCR Ex.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OCR Ex/Pods-OCR Ex.debug.xcconfig"; sourceTree = "<group>"; };
+		6B747D947978347B7F301B24 /* Pods-OCR Ex.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCR Ex.release.xcconfig"; path = "Pods/Target Support Files/Pods-OCR Ex/Pods-OCR Ex.release.xcconfig"; sourceTree = "<group>"; };
+		CD75AF3C214F8D6C00182720 /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
+		CD75AF3E214F8DF300182720 /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		CD75AF40214F8E0700182720 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		CD75AF42214F8E1100182720 /* TesseractOCR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TesseractOCR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD7EDFEF214A3B5700543148 /* OCR Ex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OCR Ex.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD7EDFF2214A3B5700543148 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CD7EDFF4214A3B5700543148 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +39,10 @@
 		CD7EDFFC214A3B5800543148 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD7EDFFF214A3B5800543148 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CD7EE001214A3B5800543148 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDFBF97B2159FD8B007013AB /* textBoxExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = textBoxExtention.swift; sourceTree = "<group>"; };
+		CDFBF97D215A48F4007013AB /* ImagePickerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerExt.swift; sourceTree = "<group>"; };
+		CDFBF97F215A4923007013AB /* ImageExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageExt.swift; sourceTree = "<group>"; };
+		CDFBF983215BAC3B007013AB /* TesseractOCR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TesseractOCR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +50,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDFBF984215BAC3B007013AB /* TesseractOCR.framework in Frameworks */,
+				CD3D93D72150D4B400842E15 /* libstdc++.tbd in Frameworks */,
+				CD75AF41214F8E0700182720 /* CoreImage.framework in Frameworks */,
+				E32AEF646080A74E4C6B751C /* Pods_OCR_Ex.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		965928F386C3B23EC32E3C0E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				463CE97C698566955E2110C4 /* Pods-OCR Ex.debug.xcconfig */,
+				6B747D947978347B7F301B24 /* Pods-OCR Ex.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		CD7EDFE6214A3B5700543148 = {
 			isa = PBXGroup;
 			children = (
 				CD7EDFF1214A3B5700543148 /* OCR Ex */,
 				CD7EDFF0214A3B5700543148 /* Products */,
+				965928F386C3B23EC32E3C0E /* Pods */,
+				E464CD34A58C123B8DF770FB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,14 +91,30 @@
 			isa = PBXGroup;
 			children = (
 				CD7EDFF2214A3B5700543148 /* AppDelegate.swift */,
+				CDFBF97D215A48F4007013AB /* ImagePickerExt.swift */,
 				CD7EDFF4214A3B5700543148 /* ViewController.swift */,
+				CDFBF97B2159FD8B007013AB /* textBoxExtention.swift */,
+				CDFBF97F215A4923007013AB /* ImageExt.swift */,
 				CD7EDFF6214A3B5700543148 /* Main.storyboard */,
 				CD7EDFFC214A3B5800543148 /* Assets.xcassets */,
 				CD7EDFFE214A3B5800543148 /* LaunchScreen.storyboard */,
 				CD7EE001214A3B5800543148 /* Info.plist */,
 				CD7EDFF9214A3B5700543148 /* OCR_Ex.xcdatamodeld */,
+				CD75AF3C214F8D6C00182720 /* tessdata */,
 			);
 			path = "OCR Ex";
+			sourceTree = "<group>";
+		};
+		E464CD34A58C123B8DF770FB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CDFBF983215BAC3B007013AB /* TesseractOCR.framework */,
+				CD75AF42214F8E1100182720 /* TesseractOCR.framework */,
+				CD75AF40214F8E0700182720 /* CoreImage.framework */,
+				CD75AF3E214F8DF300182720 /* libstdc++.tbd */,
+				011753359DE93219765D35EC /* Pods_OCR_Ex.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +124,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CD7EE004214A3B5800543148 /* Build configuration list for PBXNativeTarget "OCR Ex" */;
 			buildPhases = (
+				F4D458E3B188F78A14E2A95F /* [CP] Check Pods Manifest.lock */,
 				CD7EDFEB214A3B5700543148 /* Sources */,
 				CD7EDFEC214A3B5700543148 /* Frameworks */,
 				CD7EDFED214A3B5700543148 /* Resources */,
+				8F373C895A143233D1C7C3D3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,6 +178,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD7EE000214A3B5800543148 /* LaunchScreen.storyboard in Resources */,
+				CD75AF3D214F8D6C00182720 /* tessdata in Resources */,
 				CD7EDFFD214A3B5800543148 /* Assets.xcassets in Resources */,
 				CD7EDFF8214A3B5700543148 /* Main.storyboard in Resources */,
 			);
@@ -133,14 +186,56 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8F373C895A143233D1C7C3D3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-OCR Ex/Pods-OCR Ex-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/TesseractOCRiOS/TesseractOCR.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TesseractOCR.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OCR Ex/Pods-OCR Ex-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F4D458E3B188F78A14E2A95F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OCR Ex-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CD7EDFEB214A3B5700543148 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				CD7EDFF5214A3B5700543148 /* ViewController.swift in Sources */,
+				CDFBF97C2159FD8B007013AB /* textBoxExtention.swift in Sources */,
 				CD7EDFF3214A3B5700543148 /* AppDelegate.swift in Sources */,
+				CDFBF980215A4923007013AB /* ImageExt.swift in Sources */,
 				CD7EDFFB214A3B5700543148 /* OCR_Ex.xcdatamodeld in Sources */,
+				CDFBF97E215A48F4007013AB /* ImagePickerExt.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,7 +268,7 @@
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_CXX_LIBRARY = "compiler-default";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -201,6 +296,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -217,7 +313,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -233,7 +329,7 @@
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_CXX_LIBRARY = "compiler-default";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -261,6 +357,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -271,7 +368,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -282,10 +379,13 @@
 		};
 		CD7EE005214A3B5800543148 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 463CE97C698566955E2110C4 /* Pods-OCR Ex.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LIBRARY = "compiler-default";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9TSYUBBW4K;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "OCR Ex/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -300,10 +400,13 @@
 		};
 		CD7EE006214A3B5800543148 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B747D947978347B7F301B24 /* Pods-OCR Ex.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LIBRARY = "compiler-default";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9TSYUBBW4K;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "OCR Ex/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
